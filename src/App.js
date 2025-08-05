@@ -33,7 +33,7 @@ function App() {
       padding: '20px',
       textAlign: 'center'
        }}>
-       <img src="/logo.png" alt="Logo" style={{ width: '150px', marginBottom: '20px' }} />
+       <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" style={{ width: '150px', marginBottom: '20px' }} />
       <h1 style={{color: '#333', marginBottom: '20px'}}>Gere seu QRcode: </h1>
       <input
         type="text"
