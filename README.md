@@ -25,7 +25,8 @@ Projeto simples e funcional feito em **React** para gerar QR Codes personalizado
 
 Você pode testar o projeto online acessando o seguinte link:
 
-👉 **[https://qrcodedztf.vercel.app/](https://qrcodedztf.vercel.app/)**
+👉 **[https://qrcodedztf.vercel.app/](<img width="1326" height="825" alt="image" src="https://github.com/user-attachments/assets/4ab08994-d65e-4732-a6a9-f8c382206da8" />
+)**
 
 ---
 
