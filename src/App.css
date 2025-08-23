@@ -2,37 +2,91 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(220,20,60,0.08);
+  max-width: 720px;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.brand img { width: 120px; height: auto }
+
+h1 {
+  color: #222;
+  margin: 8px 0 20px 0;
+  font-size: 1.6rem;
+}
+
+.input-row { display: flex; gap: 12px; align-items: center; justify-content: center }
+
+input[type="text"] {
+  padding: 12px 14px;
+  width: 100%;
+  max-width: 520px;
+  border: 2px solid rgba(220,20,60,0.9);
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+button.primary {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #DC143C;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qr-preview {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  display: inline-block;
+}
+
+.download-btn {
+  margin-top: 12px;
+  padding: 8px 16px;
+  border: 2px solid rgba(220,20,60,0.9);
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .card { padding: 18px }
+  h1 { font-size: 1.25rem }
+  .brand img { width: 92px }
+  input[type="text"] { max-width: 100% }
+  .input-row { flex-direction: column }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  .App-logo { animation: App-logo-spin infinite 20s linear }
 }
