@@ -24,9 +24,6 @@ function App() {
     <div className="app-root">
       <div className="container">
         <div className="card">
-          <div className="brand">
-            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
-          </div>
           <h1>Gere seu QRcode:</h1>
 
           <div className="input-row">
